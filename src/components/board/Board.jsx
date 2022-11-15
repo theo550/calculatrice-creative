@@ -21,11 +21,20 @@ const Board = ({ handleNumber, handleOperator, reset, handleSign, percent, handl
       <button onClick={(e) => handleNumber(e.target.textContent)} className='btn'>2</button>
       <button onClick={(e) => handleNumber(e.target.textContent)} className='btn'>3</button>
       <button onClick={(e) => handleOperator(e.target.textContent)} className='btn operator'>+</button>
-      <button onClick={(e) => handleNumber(e.target.textContent)} className='item-0 btn'>0</button>
+      <button style={styles.zero} onClick={(e) => handleNumber(e.target.textContent)} className='item-0 btn'>0</button>
       <button onClick={handleDecimal} className='btn'>.</button>
-      <button onClick={handleTotal} className='btn operator'>=</button>
+      <button style={styles.equal} onClick={handleTotal} className='btn operator'>=</button>
     </div>
   )
 }
 
-export default Board
+export default Board;
+
+const styles = {
+  equal: {
+    borderRadius: '0 0 10px 0'
+  },
+  zero: {
+    borderRadius: '0 0 0 10px'
+  }
+}
