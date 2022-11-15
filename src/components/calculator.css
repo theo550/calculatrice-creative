@@ -1,0 +1,21 @@
+.container {
+  height: 500px;
+  width: 450px;
+
+  border-radius: 10px;
+}
+
+.header {
+  background-color: rgb(177, 177, 177);
+  border-radius: 10px 10px 0 0;
+  padding: 10px 30px;
+  
+  font-size: 3rem;
+  color: white;
+
+  text-align: right;
+}
+
+.second-number {
+  font-size: 1rem;
+}

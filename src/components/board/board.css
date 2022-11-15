@@ -1,0 +1,31 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: minmax(60px, auto);
+}
+
+.item-0 {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.btn {
+  border: .5px solid rgb(187, 187, 187);
+
+  cursor: pointer;
+  background-color: rgb(244, 244, 244);
+
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.operator {
+  background-color: orange;
+  color: white;
+}
+
+.operator:hover {
+  background-color: rgb(227, 148, 0);
+}
